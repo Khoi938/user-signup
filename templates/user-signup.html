@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
+    <head><style>
+        .color{color: red}
+        </style></head>
     <title>Registration Form</title>
     <body>
         <h1>User Info</h1>
         <form action="/registration", method="post">
         <table>
             <tr>
+                <td><label for="username">User Name:</label></td>
+                <td><input type="text" id="username" name="username" value="{{u}}"></td>
+                <td><label for="username"><span class="color">{{username}}</span></label></td>
+            </tr>
+            <tr>
             <td><label for="first-name">First Name:</label></td>
-            <td><input type="text" id="stuff" name="First"></td>
+            <td><input type="text" id="stuff" name="First" value="{{k}}"></td>
+            <td><label for="username"><span class="color">{{first}}</span></label></td>
             </tr>
             <tr>
             <td><label for="last-name">Last Name:</label></td>
-            <td><input type="text" id="stuff" name="Last"></td>
+            <td><input type="text" id="stuff" name="Last" value="{{l}}"></td>
+            <td><label for="username"><span class="color">{{last}}</span></label></td>
             </tr>
             <tr>
-                <td><label for="email">Email/User:</label>
-                </td>
-                <td><input type="email" id="stuff" name="email">
-                </td>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="stuff" name="email" value="{{e}}"></td>
+                <td><label for="username"><span class="color">{{email}}</span></label></td>
             </tr>
             <tr>
                 <td><label for="password">Password:</label></td>
                 <td><input type="password" id="stuff" name="password1"></td>
+                <td><label for="username"><span class="color">{{password}}</span></label></td>
             </tr>
             <tr>
                 <td><label for="confirm">Confirm P/W</label></td>
