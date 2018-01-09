@@ -62,8 +62,9 @@ def checkPW():
         template = jinja_env.get_template('confirmation.html')
         return template.render(username = username)
     else:
-        return '''<h1>Password do not match! 
-    <a href = 'http://localhost:5000/' > Return</a> </h1>'''
+        return render_template('user-signup.html', password = 'Password does not match.',k = first, l = last, u = username, e = email)
+    #    return '''<h1>Password do not match! 
+    #<a href = 'http://localhost:5000/' > Return</a> </h1>'''
 
 
 if __name__ == '__main__':
