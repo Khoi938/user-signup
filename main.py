@@ -54,7 +54,7 @@ def checkPW():
     p1 = request.form['password1']
     p2 = request.form['password2']
     if len(p1)<3 or len(p1) >20:
-        return render_template('user-signup.html', password = '3-6 Character Only!',k = first, l = last, u = username, e = email)
+        return render_template('user-signup.html', password = '3-20 Character Only!',k = first, l = last, u = username, e = email)
 
     #    return '''<h1>Please make your Password longer than 6 character. <br>
     #Click <a href = 'http://localhost:5000/' > here</a> to return.<h1>'''
